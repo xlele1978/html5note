@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>简单的HTML文件</title>
+      <style>
+
+          .inputa{
+              color:red;
+          }
+      </style>
+</head>
+<body text="blue">
+<h2 align="center">HTML初露端倪</h2>
+<hr>
+<p align="center">让我们一起体验超炫的HTML旅程吧</p>
+<p align="center">让我们一起体验超<br>炫的HTML旅程吧</p>
+<p align="center">让我们一起体验超炫的HTML旅程吧</p>
+<h2 align="center" style="color:red;background-color:green">程序猿</h2>
+<!--字体设置-->
+<p style="color:black">甲：《C++面向对象程序设计》这本书怎么比《C程序设计语言》厚了好几倍？
+<br>
+<i><strike>你能解释下原因吗？</strike></i>
+<p style="color:pink">乙：当然了，有<u>“对象”</u>后肯定麻烦呀！
+</p>
+<h4>上标：X<sup>3</sup>+9X<sup>2</sup>-3=0
+<br>下标：3X<sub>1</sub>+2X<sub>2</sub>=10</h4>
+<pre align="center">
+*
+*  *
+*  *  *
+*  *
+*
+</pre>
+<p style="font-family:arial;color:red;font-size:20px;">一个段落。</p>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美丽的西湖，“漂亮”&quot;漂亮&quot;
+&nbsp;&nbsp;&it;<漂亮&gt;&nbsp;&nbsp;5&times;2=10正确&sect;
+<pre>
+           *
+           *
+    * * * * * * * *
+         * * *
+       * * * * *
+     *     *     *
+           * 
+</pre>
+</br>
+<!--设置水平线宽度-->
+<hr width="135" align="left">
+<p>故事是这样开始的：</p>
+<br>
+<hr width="120" align="center">
+<p align="center">故事这样结束了！</P>
+
+<!--添加图片格式-->
+<p style="color:green">美丽的图画<img src="图片/4.jpg" alt="风景画" title="请欣赏山水图"  height="300"  border="2" style="color:black" hspace="50" vspace="50" align="middle">
+
+<!--添加表格-->
+<table align="center" width="50%" height="160" align="center" border="1px" cellpadding="10%">
+    <colgroup>
+          <col style="background-color:while">
+          <col style="background-color:while">
+          <col style="background-color:while">
+          <col style="background-color:while">
+          <col style="background-color:while">
+          <col style="background-color:while">
+          <col style="background-color:pink">
+     </colgroup>
+     <caption style="font-size:20px;color:black;background-color:orange" >考试成绩表</caption>
+     <tr align="center" height="25" bgcolor="yellow">
+          <th colspan="2">班级</th>
+          <th>姓名</th>
+          <th>语文</th>
+          <th>数学</th>
+          <th>英语</th>
+          <th></th>
+     </tr>
+     <tr align="center">
+          <td rowspan="2">一班</td>
+          <td>1</td>
+          <td>王佳</td>
+          <td><span style="color:red">94分</span></td>
+          <td>89分</td>
+          <td><span style="color:purple">56分</span></td>
+          <td><img src="picture/004.jpeg" height="25" ></td>
+     </tr>
+     <tr align="center">
+          <td>2</td>
+          <td>李翔</td>
+          <td>76分</td>
+          <td>85分</td>
+          <td>88分</td>
+          <td><img src="picture/006.jpeg" height="25"></td>
+     </tr>
+     <tr align="center">
+          <td>二班</td>
+          <td>1</td>
+          <td>张莹佳</td>
+          <td>89分</td>
+          <td>86分</td>
+          <td><span style="color:red">97分</span></td>
+          <td><img src="picture/008.jpeg" height="30"></td>
+     </tr>
+</table>
+
+<br/><br/>
+<!--列表排序-->
+<ul>
+     <li type="circle">入门模式</li>
+         <ol type="A">
+              <li>模式一</li>
+              <li>模式二</li>
+          </ol>
+<br/>
+      <li type="disc">初级模式</li>
+          <dl>
+               <dt>模式解读</dt>
+               <dd>模式有很多种，例如：……</dd>
+          </dl>
+<br/>
+      <li type="square">中级模式</li>
+          <ol type="I">
+               <li>模式一</li>
+               <li>模式二</li>
+               <li>模式三</li>
+          </ol>
+</ul>
+
+<!--表单制作-->
+<h2>收货信息填写</h2>
+<form action="login.html">
+   <div>姓名：
+       <input type="text" placeholder="张三" size="6"><span class="inputa">*****必填项</span>
+   </div>
+   <div>电话：
+       <input type="text"><span style="color:red">*****必填项</span>
+   </div>
+   <div>登录密码：
+       <input type="password" name="key" size="15">
+   </div>
+   <div>是否允许代收：
+       <label>是<input type="radio" name="receive" checked></label>
+       <label>否<input type="radio" name="receive"></label>
+   </div>
+   <div>包裹要求：
+       礼盒<input type="checkbox" class="checkbox1">
+       彩带<input type="checkbox" class="checkbox2">
+       卡片<input type="checkbox" class="checkbox3">
+    </div>
+   <div class="addr">地址：
+       <input type="text" placeholder="--省" size="5">
+       <input type="text" placeholder="--市" size="5">
+   </div>
+   <div>
+       <p>具体地址：<span style="color:red">*****必填项</span></p>
+       <textarea rows="2" cols="40"></textarea>
+   </div>
+   <div>血型：
+       <select>
+         <option>A型</option>
+         <option>B型</option>
+         <option>AB型</option>
+         <option>O型</option>
+       </select>
+   </div>
+<br/>
+   <div>生肖：
+       <select size="4">
+         <option>鼠</option>
+         <option>牛</option>
+         <option>虎</option>
+         <option>兔</option>
+         <option>龙</option>
+         <option>蛇</option>
+         <option>其他生肖</option>
+       </select>
+   </div>
+<br/>
+   <div id="btn">
+       <input type="submit" value="提交">
+       <input type="button" value="保存" onclick="alert('保存信息成功')">
+       <input type="reset" value="重填">
+   </div>
+
+</body>
+</html>
+
